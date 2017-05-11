@@ -1,0 +1,237 @@
+{
+  "uuid": "f26c5ba3-e901-4b67-99c5-e2ea35ca3a2d",
+  "label": "Dev Test Q",
+  "locale": "de_DE",
+  "title": "Ttitle goes here ...",
+  "description": "Orly?",
+  "created": "2017-05-11 14:23:28",
+  "updated": null,
+  "steps": [
+    {
+      "uuid": "0f02f7e5-7055-49fe-9cde-a46d157fde71",
+      "type": "question",
+      "label": "HDDA Dev Q1",
+      "title": "Foo?",
+      "subtitle": "Foobar",
+      "description": null,
+      "multi": false,
+      "auto_jump": false,
+      "follow": null,
+      "required": true,
+      "required_text": "Antworten!",
+      "style_sheets": null,
+      "salesforce": "Salutation",
+      "classes": null,
+      "answers": [
+        {
+          "uuid": "679b85f8-5251-4cfa-a747-37160a4b3dfe",
+          "label": "Always",
+          "title": "Always",
+          "salesforce": "Mr.",
+          "position": 1,
+          "next": null
+        },
+        {
+          "uuid": "e9146eb6-7d9d-4f84-9496-e5ade63f0107",
+          "label": "Sometimes",
+          "title": "Sometimes",
+          "salesforce": "Mrs.",
+          "position": 2,
+          "next": null
+        },
+        {
+          "uuid": "e6c99bea-a863-4088-9242-ad09c9f10eca",
+          "label": "Never",
+          "title": "Never",
+          "salesforce": "Ms.",
+          "position": 3,
+          "next": null
+        }
+      ]
+    },
+    {
+      "uuid": "d328e56b-8847-4729-b894-25b2384741ac",
+      "type": "question",
+      "label": "HDDA Dev Q2",
+      "title": "Bar?",
+      "subtitle": "barfoo",
+      "description": null,
+      "multi": false,
+      "auto_jump": false,
+      "follow": null,
+      "required": true,
+      "required_text": "Hallo, antworten!!",
+      "style_sheets": null,
+      "salesforce": "Salutation",
+      "classes": null,
+      "answers": [
+        {
+          "uuid": "72c60014-95b2-4bb1-bb8a-d3c5b442c117",
+          "label": "Always",
+          "title": "Always",
+          "salesforce": "Mr.",
+          "position": 1,
+          "next": null
+        },
+        {
+          "uuid": "39d43e04-a687-46e3-ab51-852dcbb372d4",
+          "label": "Sometimes",
+          "title": "Sometimes",
+          "salesforce": "Mrs.",
+          "position": 2,
+          "next": null
+        },
+        {
+          "uuid": "27f99504-db7f-4e13-bd5b-4d5f9b945367",
+          "label": "Never",
+          "title": "Never",
+          "salesforce": "Ms.",
+          "position": 3,
+          "next": null
+        }
+      ]
+    },
+    {
+      "uuid": "8c01c5f8-8df4-48de-8c09-f626c9a5c0ad",
+      "type": "page",
+      "label": "HDDA Dev Result Page",
+      "body": "\u003Cdiv style=\u0022text-align:center\u0022\u003E\n \u003Ch2 style=\u0022margin-bottom:10px;\u0022\u003EYour result:\u003C\/h2\u003E\n \u003Cdiv style=\u0022font-weight:bold;font-size:28px;\u0022\u003E{HDDA_SCORE}\u003C\/div\u003E\n\u003C\/div\u003E",
+      "style_sheets": null,
+      "action_text": "Cool, jetzt noch mehr tolle Fragen beantworten!",
+      "classes": null,
+      "created": "11.05.2017 14:21:33"
+    },
+    {
+      "uuid": "934dee97-964b-4d97-824a-32ba637ca257",
+      "type": "question",
+      "label": "Insurance_type__c",
+      "title": "Sind Sie gesetzlich oder privat versichert?",
+      "subtitle": "(Bitte eine Antwort w\u00e4hlen)",
+      "description": null,
+      "multi": false,
+      "auto_jump": false,
+      "follow": null,
+      "required": false,
+      "required_text": null,
+      "style_sheets": null,
+      "salesforce": "Insurance_type__c",
+      "classes": null,
+      "answers": [
+        {
+          "uuid": "360c5191-c201-4f3a-8326-2a2cfad66de1",
+          "label": "Insurance_type__c.statutory",
+          "title": "Gesetzlich",
+          "salesforce": "statutory",
+          "position": 1,
+          "next": null
+        },
+        {
+          "uuid": "330736c1-4152-4e65-a3f9-ed7c27a5495a",
+          "label": "Insurance_type__c.private",
+          "title": "Privat",
+          "salesforce": "private",
+          "position": 2,
+          "next": null
+        }
+      ]
+    },
+    {
+      "uuid": "e2337ff5-d800-44ac-81f6-93e7d2468079",
+      "type": "question",
+      "label": "Prescription__c",
+      "title": "Haben Sie eine Empfehlung eines HNO Arztes zum Tragen eines H\u00f6rger\u00e4ts? (z.B. Verordnung)",
+      "subtitle": "(Bitte eine Antwort w\u00e4hlen)",
+      "description": null,
+      "multi": false,
+      "auto_jump": false,
+      "follow": null,
+      "required": false,
+      "required_text": null,
+      "style_sheets": null,
+      "salesforce": "Prescription__c",
+      "classes": null,
+      "answers": [
+        {
+          "uuid": "ce4c26ac-de9d-4a9c-9ea8-ec13784b3e39",
+          "label": "Prescription__c.Available",
+          "title": "Ja",
+          "salesforce": "Available",
+          "position": 1,
+          "next": null
+        },
+        {
+          "uuid": "e9959794-04ae-4e82-8a33-0578b9efdb15",
+          "label": "Prescription__c.Not availabe",
+          "title": "Nein",
+          "salesforce": "Not available",
+          "position": 2,
+          "next": null
+        }
+      ]
+    },
+    {
+      "uuid": "be80dd2f-32df-484d-89c5-030f49b91784",
+      "type": "form",
+      "label": "Contactform_Simple Form",
+      "title": "",
+      "subtitle": null,
+      "privacy_text": "Privacy Stuff",
+      "action_text": "ActionText",
+      "floating_labels": false,
+      "required": false,
+      "required_text": null,
+      "description": null,
+      "style_sheets": null,
+      "classes": null,
+      "created": "01.11.2016 14:37:18",
+      "fields": [
+        {
+          "uuid": "a1001a96-a1b6-43e9-b90e-30d36db5d33b",
+          "label": "Salutation",
+          "title": null,
+          "type": "radio",
+          "value": "[{\u0022title\u0022:\u0022Herr\u0022,\u0022label\u0022:\u0022Salutation.Herr\u0022,\u0022salesforce\u0022:\u0022Mr.\u0022},{\u0022title\u0022:\u0022Frau\u0022,\u0022label\u0022:\u0022Salutation.Frau\u0022,\u0022salesforce\u0022:\u0022Mrs.\u0022}]",
+          "required": false,
+          "placeholder": null,
+          "required_text": null,
+          "validation_text": null,
+          "salesforce": "Salutation"
+        },
+        {
+          "uuid": "4b3ee019-552e-496e-9040-91e34df7b282",
+          "label": "LastName",
+          "title": null,
+          "type": "text",
+          "value": "[]",
+          "required": true,
+          "placeholder": "Vorname Nachname",
+          "required_text": "Bitte tragen Sie hier Ihren Namen ein.",
+          "validation_text": null,
+          "salesforce": "LastName"
+        },
+        {
+          "uuid": "a4079ef1-b8f1-4116-86f5-9907cb87273f",
+          "label": "Phone",
+          "title": null,
+          "type": "phone",
+          "value": "[]",
+          "required": true,
+          "placeholder": "Mobil- oder Festnetznummer",
+          "required_text": "Bitte tragen Sie hier Ihre Telefonnummer ein.",
+          "validation_text": "Bitte tragen Sie eine g\u00fcltige Telefonnummer ein.",
+          "salesforce": "Phone"
+        }
+      ]
+    },
+    {
+      "uuid": "3db4705e-c704-4e0c-a019-827787ae2c08",
+      "type": "page",
+      "label": "Vielen Dank f\u00fcr Ihre Anfrage (Editorial)",
+      "body": "Thanks!",
+      "style_sheets": null,
+      "action_text": "Danke",
+      "classes": null,
+      "created": "06.03.2017 11:45:48"
+    }
+  ]
+}
